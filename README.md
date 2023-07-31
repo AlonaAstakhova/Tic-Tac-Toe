@@ -1,4 +1,4 @@
-# React project. Funny game Tic Tac Toe. Play and enjoy with your friends!
+# React project. It's the funny game Tic Tac Toe. Play and enjoy with your friends!
 
 # Getting Started with Create React App
 
