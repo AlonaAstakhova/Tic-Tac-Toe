@@ -71,8 +71,8 @@ function App() {
             winMessage={winMessage}
           />
         ))}
-        <ResetButton resetBoard={resetBoard} />
       </div>
+      <ResetButton resetBoard={resetBoard} />
     </div>
   )
 }

@@ -29,7 +29,6 @@ p {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 90vh;
   background-color: #efefef;
 }
 
