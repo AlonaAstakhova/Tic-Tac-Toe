@@ -6,6 +6,7 @@ function App() {
   const [cells, setCells] = useState(Array(9).fill(null))
   const [go, setGo] = useState('cross')
   const [winMessage, setWinMessage] = useState(null)
+  const [winArr, setWinArr] = useState([])
 
   const message = 'Now ' + go + ' is going!'
 
@@ -29,6 +30,7 @@ function App() {
       if (circleWins) {
         setGo('circle')
         setWinMessage('Circle WINS!')
+        setWinArr(arr)
         return
       }
     })
@@ -39,6 +41,7 @@ function App() {
       if (crossWins) {
         setGo('cross')
         setWinMessage('Cross WINS!')
+        setWinArr(arr)
         return
       }
     })
@@ -69,6 +72,7 @@ function App() {
             setGo={setGo}
             cells={cells}
             winMessage={winMessage}
+            winArr={winArr}
           />
         ))}
       </div>

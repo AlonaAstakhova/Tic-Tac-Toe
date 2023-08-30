@@ -1,9 +1,18 @@
-export function Cell({ id, cell, setCells, go, setGo, cells, winMessage}) {
+export function Cell({
+  id,
+  cell,
+  setCells,
+  go,
+  setGo,
+  cells,
+  winMessage,
+  winArr,
+}) {
   const handleClick = (el) => {
     const value =
       el.target.firstChild.classList.contains('circle') ||
       el.target.firstChild.classList.contains('cross')
-
+      
     if (!value) {
       if (go === 'circle') {
         el.target.firstChild.classList.add('circle')
@@ -18,6 +27,7 @@ export function Cell({ id, cell, setCells, go, setGo, cells, winMessage}) {
     } else {
       value = 'circle'
     }
+   
   }
 
   const handleCellChange = (className) => {
@@ -30,6 +40,17 @@ export function Cell({ id, cell, setCells, go, setGo, cells, winMessage}) {
     })
     setCells(newCells)
   }
+
+  // const crossedOutCell = (className) => {
+  //   console.log(winArr)
+  //   winArr.map((cell, index) => {
+  //     if (index === id) {
+  //       return className
+  //     } else {
+  //       return cell
+  //     }
+  //   })
+  // }
 
   return (
     <div

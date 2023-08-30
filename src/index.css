@@ -8,7 +8,7 @@ h1 {
   font-size: 60px;
   margin-top: 3%;
   margin-bottom: 0;
-  font-family: 'Borel', cursive, sans-serif;
+  font-family: Borel, cursive, sans-serif;
 }
 
 p {
@@ -28,11 +28,12 @@ p {
 
 .app {
   min-height: 100vh;
-  min-width: 70%;
+  min-width: 100%;
   display: flex;
+  overflow: hidden;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(-45deg, #f7dba7, #f573a5, #668eec, #47f4cc);
+  background: linear-gradient(-45deg, #faeacd, #fdd2e3, #b9cdfd, #b4f9e8);
   background-size: 400% 400%;
   animation: gradient 12s ease infinite;
 }
@@ -52,10 +53,10 @@ p {
 .board {
   display: flex;
   flex-wrap: wrap;
-  border: solid 10px;
+  border: solid 5px;
   border-radius: 5%;
-  width: 600px;
-  height: 600px;
+  width: 300px;
+  height: 300px;
   background-color: white;
   box-shadow: 0px 0px 10px #888;
 }
@@ -64,23 +65,23 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border: solid 2px;
   box-sizing: border-box;
 }
 
 .circle {
-  height: 120px;
-  width: 120px;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
-  border: 23px solid #55f;
+  border: 12px solid #55f;
   box-sizing: border-box;
 }
 
 .cross {
-  width: 120px;
-  height: 120px;
+  width: 70px;
+  height: 70px;
   position: relative;
   transform: rotate(45deg);
 }
@@ -106,6 +107,16 @@ p {
   margin-top: -15%;
   width: 100%;
   border-radius: 0.5rem;
+}
+
+.crossedOut {
+  text-decoration: line-through;
+  /* top: 100%;
+  height: 100%;
+  border: black solid 2px;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg); */
 }
 
 .reset-btn {
